@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+    <head>
+        <style>
+            .paper {
+                margin-top: 50px;
+                background-color: #d9d9d9;
+                box-shadow:
+                1.2px 4px 1.6px rgba(0, 0, 0, 0.049),
+                2.7px 9.4px 3.6px rgba(0, 0, 0, 0.071),
+                4.8px 16.8px 6.5px rgba(0, 0, 0, 0.087),
+                8px 27.9px 10.8px rgba(0, 0, 0, 0.103),
+                13.2px 46px 17.7px rgba(0, 0, 0, 0.119),
+                23.1px 80.4px 31px rgba(0, 0, 0, 0.141),
+                50px 174px 67px rgba(0, 0, 0, 0.19)
+                ;
+                padding: 20px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <div>
+        <div class="row" data-aos="slide-down">
+            <div class="paper">
+                <h3>Welcome</h3>
+            </div>
+            <div class="container px-4 text-center" style="padding-top: 50px; margin-top: 25px;">
+                <div class="row gx-5">
+                  <div class="col" data-aos="slide-left">
+                    <div class="paper" style="width: 100%; margin-left: 50px;">
+                        <div class="card-body">
+                            <h3 style="text-align: left; padding: 15px;">Group Members:</h3>
+                            <hr>
+                            <ul style="padding: 45px; list-style-type: none;">
+                                <li><h4>Ian Mathew M. Aviso<h4></li>
+                                <li><h4>Franz Jason C. Dolores<h4></li>
+                                <li><h4>Dave Francis B. Ondona<h4></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col" data-aos="slide-right">
+                    <div class="paper" style="width: 80%; margin-left: 100px; margin-top: 25px; margin-right: 0;">
+                    <div class="card mb-3">
+                        <img src="/static/house.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dataset</h5>
+                            <hr>
+                            <p class="card-text">Prediction on House Prices</p>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col" data-aos="slide-up">
+                    <div class="paper" style="width: 70%; margin-left: 50px;">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 style="text-align: right; padding: 15px;">The Why?</h3>
+                            <hr>
+                            <ul style="padding: 45px; list-style-type: none; text-align: left;">
+                                <li><h5>Experiment with predictive modeling<h5></li>
+                                <li><h5>Wide Range of Features<h5></li>
+                                <li><h5>Plethora of Entries<h5></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+        body {
+            background-color: #1d1d1d;
+        }
+
+        #dataframe {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            width: 300px;
+            float: left; 
+        }
+        
+        #dataframe table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        #dataframe th, #dataframe td {
+            padding: 5px;
+            border-bottom: 1px solid #555;
+        }
+        
+        #map {
+            width: calc(100% - 320px); 
+            float: left; 
+        }
+        
+        .clear {
+            clear: both;
+        }        
+        
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="dataframe">
+        <h3>List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for index, row in country_dataframe.iterrows() %}
+                <tr>
+                    <td>{{ row['Country'] }}</td>
+                    <td>{{ row['Number'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <script>
+        var map_json = {{ map_json|safe }};
+        Plotly.newPlot('map', map_json);
+    </script>
+</body>
+</html>
+
+{% endblock %}

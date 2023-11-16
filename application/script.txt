@@ -1,0 +1,20 @@
+
+Hello Good Morning, we are group 12 and my name is..... and today we are gonna present our dataset 
+which is Predicting House Prices by utilizing multiple linear regression through different plots
+
+Now why did we choose this dataplot?
+Well we simply wanted to try out predictive modeling by using the predictors as well as the criterion or dependent variable columns in the
+dataframe and we felt like this dataset was appropriate in testing out our experiments namely through the plot/graph that we've created.
+
+Now this dataset has about 21,000 entries with 20 columns ranging from the price, features/amenities of houses to zipcode, latitute, and longtitude.
+The dataset was taken from a county in seattle, washington, and it includes homes sold between may 2014 and may 2015.
+
+Moving on to our first graph which is a scatterplot containing the predicted vs actual house prices. this plot has the square footage of house basements for our independent variables
+and the price column of the dataset as our dependent variable. now with machine learning we are able to train our models to run through our predictor variable to generate predications 
+that we can then compare to our actual values, which, in this case, are represented by our price column. Now looking at the plot we can observe that our data points exhibit a slight horizontal 
+spread and do not align perfectly with our ideal fitted line.
+
+What we can infer from this is with the multiple linear regression equation, it suggests that there is a weak to moderate correlation between the price column and the selected predictor variables.
+
+
+
